@@ -1,12 +1,11 @@
 public class IranianGardenCreator implements AbstractGardenCreator{
-
     @Override
-    public AbstractTree createTree() {
-        return null;
+    public Chenar createTree() {
+        return new Chenar(100);
     }
 
     @Override
-    public AbstractFlower createFlower() {
-        return null;
+    public Khatmi createFlower() {
+        return new Khatmi("Iran");
     }
 }

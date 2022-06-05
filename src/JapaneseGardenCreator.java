@@ -1,12 +1,11 @@
 public class JapaneseGardenCreator implements AbstractGardenCreator{
-
     @Override
-    public AbstractTree createTree() {
-        return null;
+    public JapaneseTree createTree() {
+        return new JapaneseTree(200);
     }
 
     @Override
-    public AbstractFlower createFlower() {
-        return null;
+    public JapaneseFlower createFlower() {
+        return new JapaneseFlower("Japan");
     }
 }
